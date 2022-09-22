@@ -1,12 +1,12 @@
 const express = require("express");
 const cors = require('cors');
 const dotenv = require("dotenv");
-const { connectDb } = require('./src/helpers/database/db');
-const { setUpCloudinary } = require('./src/helpers/utils/cloudinary');
+const { connectDb } = require('../src/helpers/database/db');
+const { setUpCloudinary } = require('../src/helpers/utils/cloudinary');
 
-const UserRoutes = require("./src/api/users/user.routes");
-const ProjectRoutes = require("./src/api/projects/project.routes");
-const MediaRoutes = require("./src/api/medias/media.routes");
+const UserRoutes = require("../src/api/users/user.routes");
+const ProjectRoutes = require("../src/api/projects/project.routes");
+const MediaRoutes = require("../src/api/medias/media.routes");
 
 dotenv.config()
 
